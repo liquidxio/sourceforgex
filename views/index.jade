@@ -1,0 +1,135 @@
+extends layout
+
+block content
+    h1= title
+    p The World's Outcomes Repository
+
+    // Wrapper
+    #wrapper
+
+        // USER INFO
+        #userInfo
+            h2 Outcomes Profile
+            p
+                strong Name:
+                |  <span id='userInfoName'></span>
+                br
+                strong Status:
+                |  <span id='userInfoStatus'></span>
+                br
+                strong Preffered Support Tool:
+                |  <span id='userInfoPrefferedSupportTool'></span>
+                br
+                strong Profile URL:
+                |  <span id='userInfoProfileURL'></span>
+                br
+                strong Prefered Support URL:
+                |  <span id='userInfoPrefferedSupportURL'></span>
+                br
+                strong Labels:
+                |  <span id='userInfoLabels'></span>
+                br
+                strong Private:
+                |  <span id='userInfoPrivate'></span>
+                br
+                strong Creation Date:
+                |  <span id='userInfoCreationDate'></span>
+                br
+                strong Social Networks:
+                |  <span id='userInfoSocialNetworks'></span>
+                br
+                strong Tools:
+                |  <span id='userInfoTools'></span>
+                br
+                //normal Mount Point:
+                //|  <span id='toolsMountPoint'></span>
+                //br
+                //normal name:
+                //|  <span id='toolsName'></span>
+                //br
+                //normal label:
+                //|  <span id='toolsLabel'></span>
+                //br                                                                                             	
+                strong Categories:
+                |  <span id='userInfoCategories'></span>
+                br
+                strong Icon URL:
+                |  <span id='userInfoIconURL'></span>
+                br
+                strong Video URL:
+                |  <span id='userInfoVideoURL'></span>
+                br
+                strong Screen Shots:
+                |  <span id='userInfoScreenShots'></span>
+                br
+                strong Summary:
+                |  <span id='userInfoSummary'></span>
+                br
+                strong Short Description:
+                |  <span id='userInfoShortDescription'></span>
+                br
+                strong Moved To URL:
+                |  <span id='userInfoMovedToURL'></span>
+                br
+                strong External Homepage:
+                |  <span id='userInfoExternalHomepage'></span>
+                //br
+               // strong Starred URL:
+                //|  <span id='userInfoStarredURL'></span>
+                //br
+                //strong Subscript URL:
+                //|  <span id='userInfoSubscriptionsURL'></span>
+                //br
+                //strong Org URL:
+                //|  <span id='userInfoOrganizationsURL'></span>
+                //br
+                //strong Repo URL:
+                //|  <span id='userInfoReposURL'></span>
+                //br
+                //strong Events URL:
+                //|  <span id='userInfoEventsURL'></span>
+                //br
+                //strong Received Events:
+                //|  <span id='userInfoReceivedEvents'></span>
+                //br
+                //strong Login:
+                //|  <span id='userInfoLogin'></span>
+                //br
+                //strong ID:
+                //|  <span id='userInfoID'></span>
+                //br
+                //strong Type:
+                //|  <span id='userInfoType'></span>
+                //br
+                //strong Site Admin:
+                //|  <span id='userInfoSiteAdmin'></span>
+                //br
+                //strong Created:
+                //|  <span id='userInfoCreated'></span>
+                //br
+                //strong Updated:
+                //|  <span id='userInfoUpdated'></span>
+        // /USER INFO
+
+        // USER LIST
+        h2 Outcomes Catalogue
+        #userList
+            table
+                thead
+                    th UserName
+                    th Name
+                    th Delete?
+                tbody
+        // /USER LIST
+
+        // ADD USER
+        h2 Poll the World's Repositories
+        #addUser
+            fieldset
+                input#inputUserName(type='text', placeholder='Username')
+                input#inputUserEmail(type='text', placeholder='Email') 
+                br
+                button#btnAddUser Search SourceForge
+        // /ADD USER
+
+    // /WRAPPER
